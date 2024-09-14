@@ -33,18 +33,18 @@ export default function Home() {
             Shop Now
           </Button>
           <article className="grid grid-cols-2 items-start gap-5 md:grid-cols-3 [&>figure:last-child]:col-span-2 [&>figure:last-child]:m-auto md:[&>figure:last-child]:col-span-1">
-            {StatCard.map((stat, index) => (
+            { StatCard.map((stat, index) => (
               <StatCars
-                key={index}
-                number={stat.number}
-                desciption={stat.description}
+                key={ index }
+                number={ stat.number }
+                desciption={ stat.description }
               />
-            ))}
+            )) }
           </article>
         </div>
         <div className="px-5 md:pt-5">
           <img
-            src="/public/heroImage.png"
+            src="/heroImage.png"
             alt="Imagen del hero"
             className="container m-auto aspect-auto"
           />
