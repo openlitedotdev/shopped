@@ -1,8 +1,11 @@
+import CreateRouter from './create-router'
+import Containter from './layouts/container'
+
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </>
+    <Containter>
+      <CreateRouter />
+    </Containter>
   )
 }
 

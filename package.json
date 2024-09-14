@@ -7,16 +7,19 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "fmt": "prettier --write \"**/*.{ts,tsx,md,mdx,js,cjs,mjs,jsx}\"",
-    "fmt:check": "prettier --check \"**/*.{ts,tsx,md,mdx,js,cjs,mjs,jsx}\"",
+    "fmt": "prettier --write \"./**/*.(js|ts){x,}\"",
+    "fmt:check": "prettier --check \"./**/*.(js|ts){x,}\"",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@openlite/ui": "^0.5.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "wouter": "3.3.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
+    "@types/node": "22.5.5",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
