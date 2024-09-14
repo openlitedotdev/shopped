@@ -1,3 +1,4 @@
+import BannerMark from '@/components/banners/banner-mark'
 import StatCars from '@/components/stat-card'
 import { Button } from '@openlite/ui'
 const StatCard = [
@@ -35,6 +36,7 @@ export default function Home() {
           <img src="/public/heroImage.png" alt='Imagen del hero' className='aspect-auto container m-auto' />
         </div>
       </section>
+      <BannerMark />
     </>
   )
 }
