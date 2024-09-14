@@ -11,14 +11,14 @@ import { StarRating } from './utilities/star-rating'
 const products = [
   {
     name: 'T-shirt with Tape Details',
-    image: '/t-shirt-black.png',
+    image: '/vertical-shirt.png',
     rating: 4.5,
     price: 120,
     discountedPrice: null,
   },
   {
     name: 'Skinny Fit Jeans',
-    image: '/skinny-fit.png',
+    image: '/graphic-shirt.png',
     rating: 3.5,
     price: 240,
     discountedPrice: 260,
@@ -26,14 +26,14 @@ const products = [
   },
   {
     name: 'Checkered Shirt',
-    image: '/chekered-shirt.png',
+    image: '/faded-jeans.png',
     rating: 4.5,
     price: 180,
     discountedPrice: null,
   },
   {
     name: 'Sleeve Striped T-shirt',
-    image: '/sleve-shirt.png',
+    image: '/loot-fit.png',
     rating: 4.5,
     price: 130,
     discountedPrice: 160,
@@ -41,7 +41,7 @@ const products = [
   },
 ]
 
-export default function NewArrivals() {
+export default function TopSelling() {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="mb-8 text-center text-4xl font-bold">NEW ARRIVALS</h1>
