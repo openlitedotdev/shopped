@@ -14,11 +14,11 @@ const SidebarMobile = lazy(() => import('./sidebar-mobile'))
 function Nav() {
   return (
     <nav className="hidden items-center space-x-5 lg:flex">
-      {menus.map((menuItem, _index) => (
-        <Link to={menuItem.path} key={_index}>
-          {menuItem.name}
+      { menus.map((menuItem, _index) => (
+        <Link to={ menuItem.path } key={ _index }>
+          { menuItem.name }
         </Link>
-      ))}
+      )) }
     </nav>
   )
 }
@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <>
       <Promo />
-      <header className="sticky top-0 flex items-center justify-between bg-white px-5 py-5 shadow lg:justify-start lg:gap-10 lg:px-10">
+      <header className="sticky top-0 flex items-center justify-between bg-white px-5 py-5 shadow lg:justify-start lg:gap-10 lg:px-10 z-50">
         <nav className="flex items-center gap-4">
           <SidebarMobile>
             <Button size="icon" variant="ghost" className="block lg:hidden">
