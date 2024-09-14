@@ -1,16 +1,20 @@
 import Footer from '@/components/footer'
 import Header from '@/components/header'
+import {} from 'react'
+import { createContext } from 'react'
 
-export default function Containter({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+interface WrapperAppProps {
+  theme: 'dark' | 'light'
+}
+
+export const WrapperApp = createContext<WrapperAppProps | undefined>(undefined)
+
+export const Wrapper = ({ children }: { children: React.ReactNode }) => {
   return (
-    <>
+    <WrapperApp.Provider value={{ theme: 'light' }}>
       <Header />
-      <main className="container">{children}</main>
+      <main>{children}</main>
       <Footer />
-    </>
+    </WrapperApp.Provider>
   )
 }

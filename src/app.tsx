@@ -1,11 +1,11 @@
-import CreateRouter from './create-router'
-import Containter from './layouts/default'
+import CreatePages from './pages'
+import { Wrapper } from './layouts/default'
 
 function App() {
   return (
-    <Containter>
-      <CreateRouter />
-    </Containter>
+    <Wrapper>
+      <CreatePages />
+    </Wrapper>
   )
 }
 
