@@ -11,14 +11,14 @@ import { StarRating } from './utilities/star-rating'
 const products = [
   {
     name: 'T-shirt with Tape Details',
-    image: '/vertical-shirt.png',
+    image: '/vertical-shirt.webp',
     rating: 4.5,
     price: 120,
     discountedPrice: null,
   },
   {
     name: 'Skinny Fit Jeans',
-    image: '/graphic-shirt.png',
+    image: '/graphic-shirt.webp',
     rating: 3.5,
     price: 240,
     discountedPrice: 260,
@@ -26,14 +26,14 @@ const products = [
   },
   {
     name: 'Checkered Shirt',
-    image: '/faded-jeans.png',
+    image: '/faded-jeans.webp',
     rating: 4.5,
     price: 180,
     discountedPrice: null,
   },
   {
     name: 'Sleeve Striped T-shirt',
-    image: '/loot-fit.png',
+    image: '/loot-fit.webp',
     rating: 4.5,
     price: 130,
     discountedPrice: 160,

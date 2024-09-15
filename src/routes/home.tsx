@@ -1,4 +1,5 @@
 import BannerMark from '@/components/banners/banner-mark'
+import CategoriesStyle from '@/components/Categories-style'
 import Hero from '@/components/hero'
 import NewArrivals from '@/components/new-arrivals'
 import TopSelling from '@/components/top-selling'
@@ -15,6 +16,7 @@ export default function Home() {
         <Separator />
       </div>
       <TopSelling />
+      <CategoriesStyle />
     </>
   )
 }
