@@ -16,6 +16,7 @@ export default function Home() {
       <div className="container mx-auto my-10">
         <Separator />
       </div>
+
       <TopSelling />
       <CategoriesStyle />
       <Comments />
