@@ -46,39 +46,39 @@ export default function TopSelling() {
     <div className="container mx-auto px-4 py-8">
       <h1 className="mb-8 text-center text-4xl font-bold">Top Selling</h1>
       <div className="flex flex-wrap items-center justify-center gap-10 md:justify-around">
-        { products.map((product, index) => (
+        {products.map((product, index) => (
           <Card
-            key={ index }
+            key={index}
             className="w-max overflow-hidden border-none transition-transform hover:scale-[1.1]"
           >
             <CardHeader className="w-full p-0">
               <img
-                src={ product.image }
-                alt={ product.name }
+                src={product.image}
+                alt={product.name}
                 className="h-64 object-contain"
               />
             </CardHeader>
             <CardContent className="p-4">
-              <CardTitle className="mb-2 text-lg">{ product.name }</CardTitle>
-              <StarRating rating={ product.rating } />
+              <CardTitle className="mb-2 text-lg">{product.name}</CardTitle>
+              <StarRating rating={product.rating} />
             </CardContent>
             <CardFooter className="flex items-center justify-between p-4 pt-0">
               <div className="flex items-center gap-2">
-                <span className="text-xl font-bold">${ product.price }</span>
-                { product.discountedPrice && (
+                <span className="text-xl font-bold">${product.price}</span>
+                {product.discountedPrice && (
                   <span className="text-sm text-gray-500 line-through">
-                    ${ product.discountedPrice }
+                    ${product.discountedPrice}
                   </span>
-                ) }
+                )}
               </div>
-              { product.discount && (
+              {product.discount && (
                 <span className="rounded-full bg-red-100 px-2 py-1 text-xs font-semibold text-red-600">
-                  { product.discount }
+                  {product.discount}
                 </span>
-              ) }
+              )}
             </CardFooter>
           </Card>
-        )) }
+        ))}
       </div>
       <div className="mt-8 text-center">
         <Button outline="default" className="px-8 py-2">

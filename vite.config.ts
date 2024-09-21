@@ -10,10 +10,5 @@ export default defineConfig({
       '@': resolve(import.meta.dirname, './src'),
     },
   },
-  build: {
-    rollupOptions: {
-      external: ['@openlite/ui'],
-    },
-  },
   plugins: [react()],
 })
