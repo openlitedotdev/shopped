@@ -12,7 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@openlite/ui": "^0.5.2",
+    "@openlite/ui": "^0.5.3",
     "compression": "^1.7.4",
     "express": "^4.21.0",
     "ldrs": "^1.0.2",

@@ -1,8 +1,8 @@
 import { Route, Switch } from 'wouter'
 import { lazy, Suspense } from 'react'
 import Loading from './loading'
+import Home from './routes/home'
 
-const Home = lazy(() => import('./routes/home'))
 const NotFound = lazy(() => import('./routes/not-found'))
 const Products = lazy(() => import('./routes/products'))
 const ProductByName = lazy(() => import('./routes/products/_name'))
