@@ -1,0 +1,13 @@
+{
+  "lock": false,
+  "nodeModulesDir": "auto",
+  "tasks": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "fmt": "prettier --write \"./**/*.(js|ts){x,}\"",
+    "fmt:check": "prettier --check \"./**/*.(js|ts){x,}\"",
+    "preview": "vite preview",
+    "clean": "rm -rf node_modules"
+  }
+}
