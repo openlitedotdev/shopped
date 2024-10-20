@@ -1,5 +1,6 @@
 {
   "lock": false,
+  "nodeModulesDir": "auto",
   "tasks": {
     "dev": "vite",
     "build": "tsc -b && vite build",
